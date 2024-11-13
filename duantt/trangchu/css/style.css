@@ -1,0 +1,91 @@
+/* Đặt cấu hình mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD700; /* Màu vàng khi hover */
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+/* Xem thêm button */
+.more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

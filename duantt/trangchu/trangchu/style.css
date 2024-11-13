@@ -1,0 +1,266 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+ 
+    display: flex;
+  justify-content: center;
+  }
+  .container {
+  width: 80%;
+  margin: 0 auto; /* Đảm bảo căn giữa */
+  max-width: 1200px; /* Giới hạn độ rộng tối đa nếu cần */
+}
+
+/* Đảm bảo rằng trang web chiếm toàn bộ chiều cao */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+  
+  /* Navigation */
+  .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  .cart div {
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 10px 20px 0px 0px;
+    display: inline-block;
+   
+  }
+  
+  .cart div:hover {
+    transform: scale(1.1);
+  }
+  .nguoidung{
+    background-image: url(/image/ng.jpg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .them{
+    background-image: url(/image/cong.jpg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  .giohang{
+    background-image: url(/image/shopping-cart-icon-vector-removebg-preview.png);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+  /* Main content */
+  main {
+    padding: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    transition: box-shadow 0.3s ease;
+   
+  }
+  
+  .product-item:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .product-item p {
+    padding: 0 10px 10px;
+    font-weight: bold;
+  }
+  
+  .cartbtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .cartbtn button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cartbtn button:hover {
+    background-color: #45a049;
+  }
+  
+  .icon {
+    width: 25px;
+    height: 25px;
+    background: url(/image/shopping-cart-icon-vector-removebg-preview.png);
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Banner */
+  .bang {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+  }
+  
+  .bang1, .bang2 {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 45%;
+  }
+  
+  .bang button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bang button:hover {
+    background-color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    width: 22%;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p, .footer-section ul li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #4CAF50;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.2);
+  }
