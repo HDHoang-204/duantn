@@ -1,0 +1,106 @@
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.product-item:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.product-item p {
+    padding: 0 10px 10px;
+    font-weight: bold;
+}
+
+.cartbtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cartbtn button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cartbtn button:hover {
+    background-color: #45a049;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    background: url(/image/shopping-cart-icon-vector-removebg-preview.png);
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Banner */
+.bang {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+}
+
+.bang1,
+.bang2 {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.bang button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.bang button:hover {
+    background-color: #333;
+}
