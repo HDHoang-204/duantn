@@ -9,6 +9,7 @@ import TrangChu from './compoment/Trangchu/trangchu';
 import CTSP from './compoment/Chitietsanpham/chitietsanpham';
 import DashboardAdmin from './admin';
 import GioiThieu from './compoment/Gioithieu/gioithiu';
+import Lienhe from './compoment/Lienhe/lienhe.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,10 +33,10 @@ const router = createBrowserRouter([
         path: '/gt',
         element: <GioiThieu />
       },
-      //   {
-      //     path: 'lienhe',
-      //     element: <LienHe />
-      //   }
+        {
+          path: 'lienhe',
+          element: <Lienhe />
+        }
 
     ]
   }
