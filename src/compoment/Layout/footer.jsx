@@ -2,6 +2,7 @@ import './footer.scss'
 import anh1 from '../../assets/ig.webp'
 import anh2 from '../../assets/face.jpg'
 import anh3 from '../../assets/yout.jpg'
+import React from 'react'
 function Footer() {
     return (
         <>

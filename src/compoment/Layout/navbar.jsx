@@ -1,4 +1,5 @@
 import './navbar.scss'
+import React from 'react'
 function Navbar() {
     return (
         <>
@@ -10,7 +11,7 @@ function Navbar() {
                     <ul>
                         <li><a href="/">Trang Chủ</a></li>
                         <li><a href="/ctsp">Sản Phẩm</a></li>
-                        <li><a href="#about">Giới Thiệu</a></li>
+                        <li><a href="/gt">Giới Thiệu</a></li>
                     </ul>
 
                 </div>

@@ -1,6 +1,7 @@
 
 import { Outlet } from 'react-router-dom'
 import Footer from './compoment/Layout/footer'
+import React from 'react'
 import Navbar from './compoment/Layout/navbar'
 import './index.css'
 

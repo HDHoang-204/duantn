@@ -1,5 +1,6 @@
 import "./trangchu.scss"
 import trangchu from '../../assets/sp.jpg'
+import React from 'react'
 function TrangChu() {
     return (
         <main>
