@@ -1,22 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import React from 'react';
-
-import { createBrowserRouter, RouterProvider, redirect } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css'
 import App from './App.jsx'
 import TrangChu from './compoment/Trangchu/trangchu';
 import CTSP from './compoment/Chitietsanpham/chitietsanpham';
-import DashboardAdmin from './admin';
+import DashboardAdmin from './admin/index.jsx';
 import GioiThieu from './compoment/Gioithieu/gioithiu';
 import Lienhe from './compoment/Lienhe/lienhe.jsx';
+import DoiMK from './compoment/login_out/DMK/doiMK.jsx';
 
 const router = createBrowserRouter([
-  {
-    path: '/admin/*',
-    element: <DashboardAdmin />
 
-  },
   {
     path: '/',
     element: <App />,
@@ -33,12 +29,21 @@ const router = createBrowserRouter([
         path: '/gt',
         element: <GioiThieu />
       },
-        {
-          path: 'lienhe',
-          element: <Lienhe />
-        }
+      {
+        path: 'lienhe',
+        element: <Lienhe />
+      },
+      {
+        path: '/doimatkhau',
+        element: <DoiMK />
+      }
 
     ]
+  },
+  {
+    path: '/admin',
+    element: <DashboardAdmin />
+
   }
 ])
 

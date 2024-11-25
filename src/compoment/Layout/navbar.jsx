@@ -1,12 +1,12 @@
+import React from 'react';  // Đảm bảo rằng React được import
 import './navbar.scss'
-import React from 'react'
 function Navbar() {
     return (
         <>
             <header>
 
 
-                <div class="nav">
+                <div className="nav">
                     <h1>F5 Shop</h1>
                     <ul>
                         <li><a href="/">Trang Chủ</a></li>
@@ -16,10 +16,10 @@ function Navbar() {
                     </ul>
 
                 </div>
-                <div class="cart">
-                    <div class="giohang"></div>
-                    <div class="nguoidung"></div>
-                    <div class="them"></div>
+                <div className="cart">
+                    <div className="giohang"></div>
+                    <div className="nguoidung"></div>
+                    <div className="them"></div>
                 </div>
 
             </header>
