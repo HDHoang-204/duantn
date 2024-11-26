@@ -10,16 +10,31 @@ function CTSP() {
                 </div>
 
                 <div className="product-details">
-                    <h2>Iphone 9</h2>
+                    <h2>Iphone 16 Pro Max</h2>
                     <p className="total-price">25,990,000 VND</p>
                     <p className="product-description">
-                        Sản Phẩm với thiết kế sang trọng, màn hình tràn viền, camera sắc nét và hiệu năng mạnh mẽ.
-                        Chạy trên hệ điều hành IOS mới nhất, mượt mà, hỗ trợ đầy đủ các ứng dụng và tiện ích. Đây là sự lựa chọn lý
-                        tưởng
-                        cho những ai yêu thích công nghệ và cần một chiếc điện thoại đáng tin cậy.
-                    </p>
-                    <div className="quantity-selection">
-                        <p>Chọn số lượng:</p>
+                       <h1>Iphone 16 Promax</h1>
+        <p>
+            Sản phẩm với thiết kế sang trọng, màn hình tràn viền, camera sắc nét,
+            iOS mượt mà và hiệu năng mạnh mẽ.
+          </p>
+          <h2>Cấu hình & Bộ nhớ</h2>
+          <ul>
+            <li>Hệ điều hành: iOS 18</li>
+            <li>Chip xử lý (CPU): Apple A18 Pro 6 nhân</li>
+            <li>Dung lượng pin - Tốc độ sạc: 4.400 mAh - 27 W</li>
+            <li>Chip đồ họa (GPU): Apple GPU 6 nhân</li>
+            <li>RAM: 8 GB</li>
+            <li>Dung lượng lưu trữ: 128 GB</li>
+            <li>Màn hình: 6.3 inch - 120 Hz</li>
+          </ul>
+          <div className="price-section">
+            <p className="price">25,990,000 VND</p>
+            <div className="quantity-section">
+              <label>Chọn số lượng:</label>
+              <input type="number" min="1" defaultValue="1" />
+            </div>
+          </div>
                         <div className="quantity-controls">
                             <button id="decrease-btn">-</button>
                             <span id="quantity-value">1</span>
