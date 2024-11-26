@@ -7,20 +7,20 @@ function CTSP() {
     const productListRef = useRef(null);
     const { ctpsid } = useParams();
     const products = [
-        { id: 1, name: 'Iphone 9', price: '25,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 2, name: 'Iphone 8', price: '15,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 3, name: 'Iphone 12', price: '19,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 4, name: 'Iphone 13', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 5, name: 'Iphone 13', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 6, name: 'Iphone 13', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 7, name: 'Iphone 13', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 8, name: 'Iphone 13', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' }
+        { id: 1, name: 'Iphone 16', price: '25,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
+        { id: 2, name: 'Iphone 13', price: '15,990,000 VND', img: 'https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/7/177295_2020.jpg' },
+        { id: 3, name: 'Iphone 14', price: '19,990,000 VND', img: 'https://www.istore.pt/media/catalog/product/cache/47a7b1d3a04ad63771ce52f5c8c5c41d/i/p/iphone_14_blue_pdp_image_position-1a__wwen.jpg' },
+        { id: 4, name: 'Iphone 15', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2023/12/18/vn-iphone-15-plus-pink-pdp-image-position-2-design-hhm.jpg' },
+        { id: 5, name: 'Iphone 15', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2023/12/18/vn-iphone-15-plus-pink-pdp-image-position-2-design-hhm.jpg' },
+        { id: 6, name: 'Iphone 15', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2023/12/18/vn-iphone-15-plus-pink-pdp-image-position-2-design-hhm.jpg' },
+        { id: 7, name: 'Iphone 15', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2023/12/18/vn-iphone-15-plus-pink-pdp-image-position-2-design-hhm.jpg' },
+        { id: 8, name: 'Iphone 15', price: '23,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2023/12/18/vn-iphone-15-plus-pink-pdp-image-position-2-design-hhm.jpg' }
     ];
 
     const ctspa = [
-        { id: 1, name: 'Iphone 9', price: '25,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 2, name: 'Iphone 8', price: '15,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
-        { id: 3, name: 'Iphone 12', price: '19,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
+        { id: 1, name: 'Iphone 16', price: '25,990,000 VND', img: 'https://cdn.hoanghamobile.com/i/content/Uploads/2024/09/11/iphone-16-pro-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg' },
+        { id: 2, name: 'Iphone 13', price: '15,990,000 VND', img: 'https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/7/177295_2020.jpg' },
+        { id: 3, name: 'Iphone 14', price: '19,990,000 VND', img: 'https://www.istore.pt/media/catalog/product/cache/47a7b1d3a04ad63771ce52f5c8c5c41d/i/p/iphone_14_blue_pdp_image_position-1a__wwen.jpg' },
         // Add more products if needed
     ];
 
