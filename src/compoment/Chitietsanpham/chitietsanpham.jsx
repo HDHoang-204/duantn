@@ -74,8 +74,8 @@ function CTSP() {
                     </div>
                     <button className="add-to-cart">Thêm vào giỏ hàng</button>
                     <button className="buy-now">Mua ngay</button>
-                </div>
-            </div>
+                </div >
+            </div >
             <div className="reviews">
                 <h3>Đánh giá từ khách hàng</h3>
                 <div className="review">

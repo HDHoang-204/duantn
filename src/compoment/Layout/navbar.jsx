@@ -12,6 +12,7 @@ function Navbar() {
                         <li><a href="/">Trang Chủ</a></li>
                         <li><a href="/ctsp">Sản Phẩm</a></li>
                         <li><a href="/gt">Giới Thiệu</a></li>
+                        <li><a href="/lienhe">Liên hệ</a></li>
                     </ul>
 
                 </div>
