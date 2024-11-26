@@ -1,106 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/* General Main Section */
 main {
     padding: 20px;
+}
+
+/* Home Section Styling */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    /* Màu nền sáng và dễ nhìn */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        /* Màu xanh đậm để nổi bật tiêu đề */
+        font-weight: bold;
+        margin-bottom: 20px;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #1abc9c;
+            /* Màu xanh lá */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        /* Màu xám nhẹ cho phần mô tả */
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto 30px;
+        padding: 0 10px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        margin-top: 20px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+#new-arrivals {
+    padding: 80px 20px;
+    background-color: #f9fafb;
 }
 
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .product-item {
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    position: relative;
     overflow: hidden;
-    width: 200px;
-    transition: box-shadow 0.3s ease;
-
 }
 
 .product-item:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
 }
 
 .product-item img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
 }
 
 .product-item h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #333;
-    padding: 10px;
-    text-align: left;
-}
-
-.product-item p {
-    padding: 0 10px 10px;
+    margin-top: 15px;
     font-weight: bold;
 }
 
-.cartbtn {
+.product-item .price {
+    font-size: 18px;
+    color: #45a049;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.product-item .btn {
+    background-color: #45a049;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.product-item .btn:hover {
+    background-color: #388e3c;
+}
+
+/* Hover effect */
+.product-item:hover .btn {
+    background-color: #388e3c;
+}
+
+
+/* Special Offers Section */
+#special-offers {
+    padding: 70px 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: space-around;
+    background-color: #e1f5e9;
+    text-align: center;
 }
 
-.cartbtn button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
+.offer-item {
+    background-color: #ffffff;
+    padding: 25px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px 0;
+    /* Add margin for top and bottom space */
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.offer-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.offer-item button {
+    background-color: #45a049;
+    color: white;
+    padding: 12px 25px;
     border-radius: 5px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
-.cartbtn button:hover {
+.offer-item button:hover {
+    background-color: #388e3c;
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background-color: #f3f4f6;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-content button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.about-content button:hover {
     background-color: #45a049;
 }
 
-.icon {
-    width: 25px;
-    height: 25px;
-    background: url(/image/shopping-cart-icon-vector-removebg-preview.png);
-    background-size: cover;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.icon:hover {
-    transform: scale(1.1);
-}
-
-/* Banner */
-.bang {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    gap: 20px;
-}
-
-.bang1,
-.bang2 {
-    background-color: #f5f5f5;
-    padding: 20px;
+/* Customer Reviews Section */
+#reviews {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
     text-align: center;
+}
+
+.reviews-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.review-item {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
-    width: 45%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-style: italic;
+    color: #555;
 }
 
-.bang button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.review-item p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #777;
 }
 
-.bang button:hover {
-    background-color: #333;
+.review-item span {
+    font-weight: bold;
+    color: #333;
 }
+
+.review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+#special-offers,
+#reviews {
+    padding: 70px 20px;
+    /* Adjust top and bottom padding */
+}
+
+/* Product List Styling */

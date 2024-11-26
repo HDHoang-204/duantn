@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         element: <TrangChu />
       },
       {
-        path: '/ctsp',
+        path: '/ctsp/:ctpsid',
         element: <CTSP />
       },
       {
