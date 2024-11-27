@@ -10,6 +10,8 @@ import DashboardAdmin from './admin/index.jsx';
 import GioiThieu from './compoment/Gioithieu/gioithiu';
 import Lienhe from './compoment/Lienhe/lienhe.jsx';
 import DoiMK from './compoment/login_out/DMK/doiMK.jsx';
+import GioHang from './compoment/giohang/giohang';
+import ChiTietThanhToan from './compoment/Chitietthanhtoan/ctth';
 
 const router = createBrowserRouter([
 
@@ -30,12 +32,20 @@ const router = createBrowserRouter([
         element: <GioiThieu />
       },
       {
-        path: 'lienhe',
+        path: '/lienhe',
         element: <Lienhe />
       },
       {
         path: '/doimatkhau',
         element: <DoiMK />
+      },
+      {
+        path: '/giohang',
+        element: <GioHang />
+      },
+      {
+        path: '/cttt',
+        element: <ChiTietThanhToan />
       }
 
     ]
