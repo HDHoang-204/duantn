@@ -46,12 +46,12 @@ const router = createBrowserRouter([
       {
         path: '/cttt',
         element: <ChiTietThanhToan />
-      }
+      },
 
     ]
   },
   {
-    path: '/admin',
+    path: '/admin/*',
     element: <DashboardAdmin />
 
   }

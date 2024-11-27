@@ -25,13 +25,13 @@ const DashboardAdmin = () => {
             case "/admin/cart":
                 setCategoryName("Giỏ hàng");
                 break;
-            case "/dashboard/category":
+            case "/admin/category":
                 setCategoryName("Danh mục & thương hiệu");
                 break;
-            case "/dashboard/voucher":
+            case "/admin/voucher":
                 setCategoryName("Khuyến mãi & giảm giá");
                 break;
-            case "/dashboard/pay":
+            case "/admin/pay":
                 setCategoryName("Thanh toán");
                 break;
             default:
