@@ -12,6 +12,7 @@ import Lienhe from './compoment/Lienhe/lienhe.jsx';
 import DoiMK from './compoment/login_out/DMK/doiMK.jsx';
 import GioHang from './compoment/giohang/giohang';
 import ChiTietThanhToan from './compoment/Chitietthanhtoan/ctth';
+import Login from './compoment/login_out/login/login';
 
 const router = createBrowserRouter([
 

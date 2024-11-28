@@ -18,7 +18,7 @@ function Navbar() {
                 </div>
                 <div className="cart">
                     <a href="/giohang"><div className="giohang"></div></a>
-                    <div className="nguoidung"></div>
+                    <div className="nguoidung"> </div>
                     <div className="them"></div>
                 </div>
 
