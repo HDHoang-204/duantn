@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react';
-import { useParams } from "react-router-dom";
+import React from "react";
 import "./../styles/ctsp.scss";
 
 const ProductPage = () => {
