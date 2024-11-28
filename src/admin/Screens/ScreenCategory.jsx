@@ -39,7 +39,7 @@ const ScreenCategory = () => {
       <div className="container mt-5 bg-white p-4 rounded-lg shadow-md">
         <h2 className="text-xl mb-4" style={{ color: '#2c3e50', fontWeight: 'bold' }}>
           <PlusOutlined style={{ marginRight: '10px' }} />
-          Danh sách Danh Mục
+          Danh sách sản phẩm
         </h2>
         <Button
           type="primary"
@@ -61,7 +61,7 @@ const ScreenCategory = () => {
           dataSource={categories}
           pagination={false}
           columns={[
-            { title: 'Tên Danh Mục', dataIndex: 'categoryName', key: 'categoryName' },
+            { title: 'Tên sản phẩm', dataIndex: 'categoryName', key: 'categoryName' },
             { title: 'Thương Hiệu', dataIndex: 'brand', key: 'brand' },
             { title: 'Mô Tả', dataIndex: 'description', key: 'description' },
             {
@@ -91,7 +91,7 @@ const ScreenCategory = () => {
       </div>
 
       <Modal
-        title={editingCategory ? 'Sửa Danh Mục' : 'Thêm Mới Danh Mục'}
+        title={editingCategory ? 'Sửa sản phẩm' : 'Thêm Mới sản phẩm'}
         visible={isModalVisible}
         onCancel={() => {
           setIsModalVisible(false);
@@ -104,9 +104,9 @@ const ScreenCategory = () => {
           onFinish={handleAddOrEditCategory}
         >
           <Form.Item
-            label="Tên Danh Mục"
+            label="Tên sản phẩm"
             name="categoryName"
-            rules={[{ required: true, message: 'Vui lòng nhập tên danh mục' }]} >
+            rules={[{ required: true, message: 'Vui lòng nhập tên sản phẩm' }]} >
             <Input style={{ borderRadius: '4px', borderColor: '#3498db' }} />
           </Form.Item>
 

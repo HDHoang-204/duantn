@@ -83,6 +83,9 @@ header {
     }
 }
 
+.animotion-top-to-bottom{
+    @apply motion-translate-x-in-[-3%] motion-translate-y-in-[-147%] motion-duration-[1.50s]
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
