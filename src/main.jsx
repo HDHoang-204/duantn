@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css'
 import App from './App.jsx'
 import TrangChu from './compoment/Trangchu/trangchu';
-import CTSP from './compoment/Chitietsanpham/chitietsanpham';
+import CTSP from './compoment/Chitietsanpham/ProductPage.jsx';
 import DashboardAdmin from './admin/index.jsx';
 import GioiThieu from './compoment/Gioithieu/gioithiu';
 import Lienhe from './compoment/Lienhe/lienhe.jsx';

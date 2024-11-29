@@ -49,25 +49,25 @@ function TrangChu() {
             <h2 className="h2">Sản Phẩm Bán Chạy</h2>
             <section id="products">
                 <div className="product-list">
-                    <div class="product-item">
+                    <div className="product-item">
                         <img src={trangchu} alt="Sản phẩm 1" />
                         <h3>Sản phẩm 1</h3>
-                        <p class="price">1.000.000$</p>
-                        <a href="#" class="btn">Mua ngay</a>
+                        <p className="price">1.000.000$</p>
+                        <a href="#" className="btn">Mua ngay</a>
                     </div>
 
-                    <div class="product-item">
+                    <div className="product-item">
                         <img src={trangchu} alt="Sản phẩm 1" />
                         <h3>Sản phẩm 1</h3>
-                        <p class="price">1.000.000$</p>
-                        <a href="#" class="btn">Mua ngay</a>
+                        <p className="price">1.000.000$</p>
+                        <a href="#" className="btn">Mua ngay</a>
                     </div>
 
-                    <div class="product-item">
+                    <div className="product-item">
                         <img src={trangchu} alt="Sản phẩm 1" />
                         <h3>Sản phẩm 1</h3>
-                        <p class="price">1.000.000$</p>
-                        <a href="#" class="btn">Mua ngay</a>
+                        <p className="price">1.000.000$</p>
+                        <a href="#" className="btn">Mua ngay</a>
                     </div>
                     {/* Add more products here */}
                 </div>
