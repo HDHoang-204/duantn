@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/ctsp.scss";
+import "./ctsp.scss";
 
 const ProductPage = () => {
   const productData = {
