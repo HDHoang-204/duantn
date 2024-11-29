@@ -3,33 +3,36 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.animotion-left-to-right {
+  @apply motion-translate-x-in-[-200%] motion-translate-y-in-[-2%] motion-duration-[2.5s];
+}
 
-
+.animotion-right-to-left {
+  @apply motion-translate-x-in-[200%] motion-translate-y-in-[1%] motion-duration-[2.50s];
+}
 .container {
-    width: 100%;
-    margin: 0 auto;
-    /* Đảm bảo căn giữa */
-    max-width: 100%;
-    /* Giới hạn độ rộng tối đa nếu cần */
+  width: 100%;
+  margin: 0 auto;
+  /* Đảm bảo căn giữa */
+  max-width: 100%;
+  /* Giới hạn độ rộng tối đa nếu cần */
 }
-
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
-    text-align: center;
+  text-align: center;
 }

@@ -69,8 +69,32 @@ header {
             }
         }
 
+        .llogin {
+            width: 100%;
+
+            height: auto;
+
+            span {
+                font-weight: bold;
+                color: #333;
+            }
+
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
         .nguoidung {
             background-image: url('../../assets/ng.jpg');
+
+
+
         }
 
         .them {
@@ -81,6 +105,10 @@ header {
             background-image: url('../../assets/shopping-cart-icon-vector-removebg-preview.png');
         }
     }
+}
+
+.animotion-top-to-bottom {
+    @apply motion-translate-x-in-[-3%] motion-translate-y-in-[-147%] motion-duration-[1.50s]
 }
 
 /* Responsive Design */

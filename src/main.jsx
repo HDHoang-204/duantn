@@ -12,7 +12,11 @@ import Lienhe from './compoment/Lienhe/lienhe.jsx';
 import DoiMK from './compoment/login_out/DMK/doiMK.jsx';
 import GioHang from './compoment/giohang/giohang';
 import ChiTietThanhToan from './compoment/Chitietthanhtoan/ctth';
-import Login from './compoment/login_out/login/login';
+import { Home } from './pages/Home.jsx';
+import { ProductPage } from './pages/ProductPage.jsx';
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
+
 
 const router = createBrowserRouter([
 
@@ -22,11 +26,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <TrangChu />
+        element: <Home />
       },
       {
-        path: '/ctsp/:ctpsid',
-        element: <CTSP />
+        path: 'sanpham',
+        element: <ProductPage />
       },
       {
         path: '/gt',
@@ -48,6 +52,11 @@ const router = createBrowserRouter([
         path: '/cttt',
         element: <ChiTietThanhToan />
       },
+      {
+        path: '/login',
+        element: <Login />
+      },
+
 
     ]
   },

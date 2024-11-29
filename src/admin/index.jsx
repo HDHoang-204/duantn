@@ -11,7 +11,7 @@ import ScreenOrder from './Screens/ScreenOrder';
 import ScreenCustomer from './Screens/ScreenCustomer';
 
 const DashboardAdmin = () => {
-    const [categoryName, setCategoryName] = useState("Tên danh mục");
+    const [categoryName, setCategoryName] = useState("Tên sản phẩm");
     const location = useLocation();
 
     React.useEffect(() => {
@@ -26,7 +26,7 @@ const DashboardAdmin = () => {
                 setCategoryName("Giỏ hàng");
                 break;
             case "/admin/category":
-                setCategoryName("Danh mục & thương hiệu");
+                setCategoryName("Danh sách sản phẩm");
                 break;
             case "/admin/voucher":
                 setCategoryName("Khuyến mãi & giảm giá");
@@ -59,7 +59,7 @@ const DashboardAdmin = () => {
                         </Link>
                         <Link className="text-gray-800 mb-2 bg-yellow-300 hover:bg-yellow-400 p-2 rounded-lg flex items-center gap-2" to="/admin/category">
                             <AppstoreAddOutlined />
-                            Danh mục & thương hiệu
+                            Danh sách sản phẩm
                         </Link>
                         <Link className="text-gray-800 mb-2 bg-red-300 hover:bg-red-400 p-2 rounded-lg flex items-center gap-2" to="/admin/voucher">
                             <TagOutlined />

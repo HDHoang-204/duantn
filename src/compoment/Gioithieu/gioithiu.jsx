@@ -9,7 +9,7 @@ function GioiThieu() {
     ];
     return (
         <>
-            <section className='baner'>
+            <section className='baner mt-[70px]'>
 
                 <div className="baner-image">
                     <img src="https://m2.portotheme.com/media/wysiwyg/smartwave/porto/homepage/14/shop14_home_slider1.jpg" alt="" />
